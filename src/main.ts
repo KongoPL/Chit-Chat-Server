@@ -8,8 +8,9 @@ eval( fs.readFileSync( __dirname + '/classes/ChannelsManager.js', 'utf8' ) );
 eval( fs.readFileSync( __dirname + '/classes/ClientsManager.js', 'utf8' ) );
 eval( fs.readFileSync( __dirname + '/classes/Channel.js', 'utf8' ) );
 
+const port = process.env.PORT || 4321;
 
-var socketServer = require( 'socket.io' )( 4321 ),
+var socketServer = require( 'socket.io' )( port ),
 	peerServer = require( 'peer' ).PeerServer( { port: 4322 } );
 
 
@@ -61,4 +62,4 @@ socketServer.on( 'connection', ( client: SocketIO.Socket ) =>
 } );
 
 console.clear();
-console.log( "Server running at 4321 and 4322!" );
+console.log( "Server running at "+port+" and 4322!" );

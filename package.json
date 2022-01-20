@@ -8,14 +8,14 @@
     "redeploy": "git push heroku master:main"
   },
   "dependencies": {
-    "@types/socket.io": "^2.1.2",
     "peer": "^0.2.10",
     "socket.io": "^2.2.0"
   },
   "engines": {
-    "node": "16.x.x"
+    "node": "14.x.x"
   },
   "devDependencies": {
+    "@types/socket.io": "^2.1.2",
     "typescript": "^4.5.4"
   }
 }
