@@ -3,11 +3,15 @@
   "scripts": {
     "start": "node dist/main.js",
     "postinstall": "tsc",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "deploy": "git add . && git commit -m Heroku && git push heroku master",
+    "redeploy": "git push heroku master:main"
   },
   "dependencies": {
     "@types/socket.io": "^2.1.2",
     "peer": "^0.2.10",
     "socket.io": "^2.2.0"
+  },
+  "engines": {
+    "node": "16.x..."
   }
 }
