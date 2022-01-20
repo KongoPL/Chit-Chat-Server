@@ -1,4 +1,10 @@
 {
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "node dist/main.js",
+    "postinstall": "tsc",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+  },
   "dependencies": {
     "@types/socket.io": "^2.1.2",
     "peer": "^0.2.10",
