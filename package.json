@@ -2,8 +2,8 @@
   "main": "dist/main.js",
   "scripts": {
     "start": "node dist/main.js",
-    "postinstall": "npm run tsc",
-    "tsc": "tsc",
+    "postinstall": "npm run build",
+    "build": "tsc",
     "deploy": "git add . && git commit -m Heroku && git push heroku master",
     "redeploy": "git push heroku master:main"
   },
@@ -14,5 +14,8 @@
   },
   "engines": {
     "node": "16.x.x"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
   }
 }
