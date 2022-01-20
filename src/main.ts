@@ -10,8 +10,8 @@ eval( fs.readFileSync( __dirname + '/classes/Channel.js', 'utf8' ) );
 
 const port = process.env.PORT || 4321;
 
-var socketServer = require( 'socket.io' )( port ),
-	peerServer = require( 'peer' ).PeerServer( { port: 4322 } );
+var socketServer = require( 'socket.io' )( port );//,
+	// peerServer = require( 'peer' ).PeerServer( { port: 4322 } );
 
 
 
