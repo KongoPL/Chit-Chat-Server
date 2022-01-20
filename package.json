@@ -8,7 +8,7 @@
     "redeploy": "git push heroku master:main"
   },
   "dependencies": {
-    "peer": "^0.2.10",
+    "peerjs": "^1.3.0",
     "socket.io": "^2.2.0"
   },
   "engines": {
